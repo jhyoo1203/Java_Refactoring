@@ -1,6 +1,6 @@
 package interitance_composition;
 
-public class Car extends Radio {
+public class Car {
     private String name;
     private Radio radio;
 
