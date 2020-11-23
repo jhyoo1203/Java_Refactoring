@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class App {
-
     public static void main(String[] args) {
         Major computer = new Major("컴퓨터 공학", 3);
         computer.add(new Student("0001", "홍길동"));
