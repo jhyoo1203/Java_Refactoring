@@ -6,6 +6,29 @@ package kr.ac.gwnu.com.bowling;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import org.junit.After;
+import org.junit.Before;
+
 public class AppTest {
-    
+    Player player;
+    BowlingGame bowlingGame;
+
+    @Before
+    public void setUp() {
+        player = new Player("유재현");
+        bowlingGame = new BowlingGame(player);
+    }
+
+    @After
+    public void tearDown() {
+        player = null;
+        bowlingGame = null;
+    } 
+
+    @Test
+    public void test_constructor() {
+        assertNotNull(player);
+        assertNotNull(bowlingGame);
+        assertEquals("유재현", player.getName());
+    }
 }
